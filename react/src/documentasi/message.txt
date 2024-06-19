@@ -1,0 +1,4 @@
+cara install react menggunakan vite
+-pnmpm create vite
+-pnpm install
+-pnpm run dev
