@@ -1,16 +1,12 @@
-function Article(props) {
 
+
+function Article(props) {
     return (
         <>
-            <div>{props.name}</div>
-            <div>
-                {props.titles.map(title => {
-                    return <div>{title}</div>;
-                })}
-            </div>
+            <h3>{props.title}</h3>
+            <small>Date: {props.date}, tags: {props.tags && props.tags.length > 0 ? props.tags.join(", ") : "No tags"}</small>
         </>
     );
-    // return <div>{nama}</div> //ini digunakakn ketika kita ingin meretrun satu elemen saja
 }
 
-export default Article
+export default Article;
