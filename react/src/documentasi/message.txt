@@ -2,3 +2,5 @@ cara install react menggunakan vite
 -pnmpm create vite
 -pnpm install
 -pnpm run dev
+
+Conditional Rendering:adalah suatu kondisi saat kita merender sesuatu berdasarkan value(dinamis)

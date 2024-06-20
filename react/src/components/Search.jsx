@@ -8,7 +8,7 @@ function Search(props) {
     return (
         <>
         <div>Cari artikel: <input type="text" onChange={onSearchChange} /></div>
-        <small>Ditemukan 0 data dengan pencarian {search}</small>
+        <small>Ditemukan {props.totalPosts} data dengan pencarian {search}</small>
         </>
     )
 }
