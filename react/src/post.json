@@ -2,16 +2,19 @@
     {
         "title": "HTML",
         "tags": ["HTML","Front-end"],
-        "date": "2024-06-20"
+        "date": "2024-06-20",
+        "isNew": true
     },
     {
         "title": "Dasar Dalam Front-End",
         "tags": ["HTML","Front-end"],
-        "date": "2024-06-21"
+        "date": "2024-06-21",
+        "isNew": false
     },
     {
         "title": "Cara menggunakan HTML",
         "tags": ["HTML","CSS"],
-        "date": "2024-06-22"
+        "date": "2024-06-22",
+        "isNew": false
     }
 ]
