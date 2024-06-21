@@ -6,7 +6,6 @@ import Search from '../components/Search';
 function Homepage() {
     const [posts,setPosts] = useState(postsData)
     const [totalPosts,setTotalPosts] = useState(0)
-    const [externalPosts, setExternalPosts] = useState([])
 
     const onSearchChange = (value) =>{
         console.log(value)
@@ -21,11 +20,6 @@ function Homepage() {
       .then(json => setExternalPosts(json))
     }, [])
 
-    useEffect(() => {
-        console.log('ada posts baru')
-    }, [posts])
-
-
 
     return (
         <>
@@ -34,11 +28,6 @@ function Homepage() {
             {posts.map((props,index) => 
                 <Article {...props}  key={index}/>
             )}
-            <hr />
-            <h2>Eksternal Posts</h2>
-            {externalPosts.map((item, index) => (
-                <div key={index}>- {item.title}</div>
-            ))}
         </>
     );
 }
