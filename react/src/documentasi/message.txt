@@ -6,3 +6,9 @@ cara install react menggunakan vite
 Conditional Rendering:adalah suatu kondisi saat kita merender sesuatu berdasarkan value(dinamis)
 
 //aturan dalam menulis component huruf pertama harus besar
+
+dalam react dlu ada namanya lifecyle
+-componentDidMount
+-componentDidUpdate
+-componentWillUnmount
+tapi itu semua bisa dijadiin satu dengan useEffect
