@@ -5,6 +5,7 @@ import Blog from "../pages/blogs"
 import Post from "../pages/blogs/_id"
 import About from "../pages/About"
 
+import { posts,postById } from "../apis/loader"
 
 export const router = createBrowserRouter([
     {
@@ -18,10 +19,12 @@ export const router = createBrowserRouter([
             {
                 path: "/blog",
                 element: <Blog />,
+                loader: posts,
             },
             {
                 path: "/blog/:id",
                 element: <Post />,
+                loader:postById,
             },
             {
                 path: "/about",
